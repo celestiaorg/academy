@@ -49,7 +49,7 @@ export default async function ProtectedPage() {
             className="font-bold hover:underline"
             rel="noreferrer"
           >
-            Supabase
+            Celestia Labs
           </a>
         </p>
       </footer>

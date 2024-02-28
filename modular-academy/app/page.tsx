@@ -45,7 +45,7 @@ export default async function Index() {
             className="font-bold hover:underline"
             rel="noreferrer"
           >
-            Supabase
+            Celestia Labs
           </a>
         </p>
       </footer>
