@@ -32,3 +32,11 @@ jobs:
         with:
           branch: gh-pages
           folder: build
+
+      - name: List output files
+        run: |
+          if [ -d "build" ]; then
+            ls -l build
+          else
+            echo "Build directory does not exist."
+          fi
