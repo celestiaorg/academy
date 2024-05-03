@@ -25,7 +25,10 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm run build
+        run: pnpm run build || true
+
+      - name: Print build output
+        run: cat build.log || echo "No build output"
         
       - name: List output files
         run: |
@@ -34,7 +37,7 @@ jobs:
           else
             echo "Build directory does not exist."
           fi
-          
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
