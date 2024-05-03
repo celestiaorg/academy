@@ -49,16 +49,20 @@ export default defineConfig({
         link: '/modules/1/raspberry',
       },
       {
-        text: 'thirdweb',
+        text: 'Deploy your contract',
         link: '/modules/1/thirdweb',
       },
-    ],
-    '/' : [
       {
-        text: 'Build whatever',
-        link: '/build-whatever',
-      },
+        text: 'Minting your NFT',
+        link: '/modules/1/minting',
+      }
     ],
+    // '/' : [
+    //   {
+    //     text: 'Build whatever',
+    //     link: '/build-whatever',
+    //   },
+    // ],
   },
   socials: [
     {
@@ -118,6 +122,13 @@ export default defineConfig({
             link: "https://docs.optimism.io",
             image: "/logos/orbit.svg",
           },
+        ],
+        [
+          {
+            name: "whatever",
+            link: "https://buildwhatever.com",
+            image: "logos/whatever.svg",
+          }
         ]
       ],
     },
