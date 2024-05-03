@@ -35,46 +35,31 @@ export default defineConfig({
     google: 'Ubuntu'
   },
   banner: '[Join the Telegram for updates](https://t.me/modularacademyorg)!', 
-  // banner: {
-  //   dismissable: false,
-  //   backgroundColor: 'green',
-  //   content: '[Sign up for updates](https://twitter.com/CelestiaOrg)!',
-  //   height: '28px',
-  //   textColor: 'white',
-  // },
   // baseUrl: 'https://modular.academy',
   baseUrl: 'https://celestiaorg.github.io/academy',
-  sidebar: [
-    // TODO: Add different sections sidebars
-    // '/guide': [{
-    //   text: 'Getting Started',
-    //   link: '/guide',
-    // }],
-    // '/api': [{
-    //   text: 'Config',
-    //   link: '/api/config',
-    // }],
-    {
-      text: 'Build whatever',
-      link: '/build-whatever',
-    },
-    {
-      text: 'Smart contract modules',
-      collapsed: false,
-      items: [
-        {
-          text: 'Module 1',
-          collapsed: false,
-          items: [
-            {
-              text: 'Introduction',
-              link: '/modules/1/introduction-to-module-1',
-            },
-          ],
-        },
-      ],
-    },
-  ],
+  sidebar:
+  {
+    '/modules/1/': [ 
+      {
+        text: 'Introduction',
+        link: '/modules/1/introduction',
+      },
+      {
+        text: 'Raspberry testnet',
+        link: '/modules/1/raspberry',
+      },
+      {
+        text: 'thirdweb',
+        link: '/modules/1/thirdweb',
+      },
+    ],
+    '/' : [
+      {
+        text: 'Build whatever',
+        link: '/build-whatever',
+      },
+    ],
+  },
   socials: [
     {
       icon: 'github',
@@ -82,22 +67,59 @@ export default defineConfig({
     },
     {
       icon: 'x',
-      link: 'https://twitter.com/CelestiaOrg',
+      link: 'https://twitter.com/celestia_devs',
+    },
+    {
+      icon: 'warpcast',
+      link: 'https://warpcast.com/celestiaorg'
     },
     {
       icon: 'telegram',
       link: 'https://t.me/modularacademyorg',
     },
   ],
-  // theme: {
-  //   accentColor: '#7B2BF9',
-  //   variables: {
-  //     color: {
-  //       background: {
-  //         light: 'white',
-  //         dark: 'black'
-  //       }
-  //     }
-  //   }
-  // },
+  sponsors: [
+    {
+      name: 'Learn to build whatever with',
+      height: 60,
+      items: [
+        [
+          {
+            name: 'Celestia',
+            link: 'https://celestia.org',
+            image: '/logos/celestia.svg',
+          },
+          {
+            name: 'Rollkit',
+            link: 'https://rollkit.dev',
+            image: '/logos/rollkit.svg',
+          },
+        ],
+        [
+          {
+            name: 'Sovereign SDK',
+            link: 'https://sovereign.xyz',
+            image: '/logos/sovereign.svg',
+          },
+          {
+            name: 'Astria',
+            link: 'https://astria.org',
+            image: '/logos/astria.svg',
+          },
+        ],
+        [
+          {
+            name: "OP Stack",
+            link: "https://docs.optimism.io",
+            image: "/logos/optimism.svg",
+          },
+          {
+            name: "Arbitrum Nitro and Orbit",
+            link: "https://docs.optimism.io",
+            image: "/logos/orbit.svg",
+          },
+        ]
+      ],
+    },
+  ],
 })
