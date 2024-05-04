@@ -33,5 +33,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           force_orphan: true
-          user_name: jcstein
-          user_email: joshcs@celestia.org
