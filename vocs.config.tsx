@@ -11,6 +11,7 @@ export default defineConfig({
       <meta property="og:description" content="Build whatever with Celestia underneath." />
     </> 
   ),
+  basePath: '/academy',
   iconUrl: {
     light: '/icon-light.svg',
     dark: '/icon-dark.svg'
