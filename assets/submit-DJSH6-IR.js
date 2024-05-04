@@ -1,0 +1,12 @@
+import{u as a,j as e}from"./index-Cx1ownY7.js";import{B as r}from"./HomePage.css.js.vanilla-DRljwl2f.js";const s={description:"Congratulations! Now submit and share your work.",title:"Submit module 1"};function o(n){const t={a:"a",aside:"aside",div:"div",h1:"h1",h2:"h2",header:"header",p:"p",...a(),...n.components};return e.jsxs(e.Fragment,{children:[e.jsx(t.header,{children:e.jsxs(t.h1,{id:"submit-module-1",children:["Submit module 1",e.jsx(t.a,{"aria-hidden":"true",tabIndex:"-1",href:"#submit-module-1",children:e.jsx(t.div,{"data-autolink-icon":!0})})]})}),`
+`,`
+`,e.jsxs(t.h2,{id:"post-about-it",children:["Post about it",e.jsx(t.a,{"aria-hidden":"true",tabIndex:"-1",href:"#post-about-it",children:e.jsx(t.div,{"data-autolink-icon":!0})})]}),`
+`,e.jsx(t.p,{children:"Congratulations 🎉 you've just deployed a contract, and minted an ERC-721 NFT on a rollup!"}),`
+`,e.jsx(t.p,{children:"Now, let's share your accomplishment with the world. Post a tweet with a screenshot of your NFT and a link to your thirdweb NFT dashboard."}),`
+`,e.jsx(r,{href:"https://twitter.com/intent/tweet?text=I just finished module 1 of Modular Academy! Check out my NFT",variant:"accent",target:"_blank",children:"send tweet/xeet"}),`
+`,e.jsxs(t.h2,{id:"submit-your-module",children:["Submit your module",e.jsx(t.a,{"aria-hidden":"true",tabIndex:"-1",href:"#submit-your-module",children:e.jsx(t.div,{"data-autolink-icon":!0})})]}),`
+`,e.jsxs(t.p,{children:[e.jsx(t.a,{href:"https://forms.gle/p4MNauxsz6ijnfjR8",children:"Submit your tweet link with your EVM address and a link to the mint transaction"})," and we'll send you an NFT as a momento of finishing your first module on your journey in the Modular Academy."]}),`
+`,e.jsxs(t.h2,{id:"next-steps",children:["Next steps",e.jsx(t.a,{"aria-hidden":"true",tabIndex:"-1",href:"#next-steps",children:e.jsx(t.div,{"data-autolink-icon":!0})})]}),`
+`,e.jsx(t.p,{children:"Share your tweet in the telegram chat and see what others are building."}),`
+`,e.jsxs(t.p,{children:["Then head back to the ",e.jsx(t.a,{href:"/build-whatever",children:"modules page"})," to continue your journey through the Modular Academy."]}),`
+`,e.jsx(t.aside,{"data-callout":"success",children:e.jsx(t.p,{children:"We're working on more modules now for you to continue your journey. Stay tuned!"})})]})}function u(n={}){const{wrapper:t}={...a(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(o,{...n})}):o(n)}export{u as default,s as frontmatter};
