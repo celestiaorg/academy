@@ -9,6 +9,7 @@ export default defineConfig({
       {/* <meta property="og:url" content="https://modular.academy" /> */}
       <meta property="og:url" content="https://celestiaorg.github.io/academy" />
       <meta property="og:description" content="Build whatever with Celestia underneath." />
+      <script defer data-domain="modular-academy.vercel.app" src="https://plausible.io/js/script.js"></script>
     </> 
   ),
   // basePath: '/academy',
