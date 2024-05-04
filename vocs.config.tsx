@@ -37,7 +37,7 @@ export default defineConfig({
   },
   banner: '[Join the Telegram for updates](https://t.me/modularacademyorg)!', 
   // baseUrl: 'https://modular.academy',
-  baseUrl: 'https://celestiaorg.github.io/academy',
+  baseUrl: 'https://modular-academy.vercel.app',
   sidebar:
   {
     '/modules/1/': [ 
