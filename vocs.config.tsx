@@ -96,36 +96,36 @@ export default defineConfig({
           {
             name: 'Celestia',
             link: 'https://celestia.org',
-            image: '/logos/celestia.svg',
+            image: 'logos/celestia.svg',
           },
           {
             name: 'Rollkit',
             link: 'https://rollkit.dev',
-            image: '/logos/rollkit.svg',
+            image: 'logos/rollkit.svg',
           },
         ],
         [
           {
             name: 'Astria',
             link: 'https://astria.org',
-            image: '/logos/astria.svg',
+            image: 'logos/astria.svg',
           },
           {
             name: 'Sovereign SDK',
             link: 'https://sovereign.xyz',
-            image: '/logos/sovereign.svg',
+            image: 'logos/sovereign.svg',
           },
         ],
         [
           {
             name: "Arbitrum Nitro and Orbit",
             link: "https://docs.optimism.io",
-            image: "/logos/orbit.svg",
+            image: "logos/orbit.svg",
           },
           {
             name: "OP Stack",
             link: "https://docs.optimism.io",
-            image: "/logos/optimism.svg",
+            image: "logos/optimism.svg",
           },
         ],
         [
