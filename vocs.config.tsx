@@ -7,7 +7,7 @@ export default defineConfig({
       <meta property="og:title" content="Modular Academy" />
       <meta property="og:image" content="https://vocs.dev/api/og?logo=%logo&title=%title&description=%description" />
       {/* <meta property="og:url" content="https://modular.academy" /> */}
-      <meta property="og:url" content="https://celestiaorg.github.io/academy" />
+      <meta property="og:url" content="https://modular-academy.vercel.app" />
       <meta property="og:description" content="Build whatever with Celestia underneath." />
       <script defer data-domain="modular-academy.vercel.app" src="https://plausible.io/js/script.js"></script>
     </> 
@@ -36,7 +36,7 @@ export default defineConfig({
   font: {
     google: 'Ubuntu'
   },
-  banner: '[Join the Telegram for updates](https://t.me/modularacademyorg)!', 
+  banner: 'Join [the Telegram](https://t.me/modularacademyorg) for updates!', 
   // baseUrl: 'https://modular.academy',
   baseUrl: 'https://modular-academy.vercel.app',
   sidebar:
@@ -63,12 +63,6 @@ export default defineConfig({
         link: '/modules/1/submit',
       }
     ],
-    // '/' : [
-    //   {
-    //     text: 'Build whatever',
-    //     link: '/build-whatever',
-    //   },
-    // ],
   },
   socials: [
     {
