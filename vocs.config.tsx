@@ -1,8 +1,9 @@
 import { defineConfig } from 'vocs'
 
 export default defineConfig({
-  head: ( 
-    <>
+  head() {
+    return (
+      <>
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Modular Academy" />
       <meta property="og:image" content="https://vocs.dev/api/og?logo=%logo&title=%title&description=%description" />
@@ -10,8 +11,9 @@ export default defineConfig({
       <meta property="og:url" content="https://modular-academy.vercel.app" />
       <meta property="og:description" content="Build whatever with Celestia underneath." />
       <script defer data-domain="modular-academy.vercel.app" src="https://plausible.io/js/script.js"></script>
-    </> 
-  ),
+      </>
+    )
+  },
   // basePath: '/academy',
   iconUrl: {
     light: '/icon-light.svg',
