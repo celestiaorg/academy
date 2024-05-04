@@ -36,7 +36,7 @@ export default defineConfig({
     text: 'Edit this page on GitHub'
   },
   font: {
-    google: 'Ubuntu'
+    google: 'Poppins'
   },
   banner: 'Join [the Telegram](https://t.me/modularacademyorg) for updates!', 
   // baseUrl: 'https://modular.academy',
@@ -127,15 +127,22 @@ export default defineConfig({
         ],
         [
           {
-            name: "whatever",
-            link: "https://buildwhatever.com",
-            image: "logos/whatever.svg",
+            name: "Gelato",
+            link: "https://gelato.network",
+            image: "logos/gelato.svg",
           },
           {
             name: "thirdweb",
             link: "https://thirdweb.com",
             image: "logos/thirdweb.svg",
           }
+        ],
+        [
+          {
+            name: "whatever",
+            link: "https://buildwhatever.com",
+            image: "logos/whatever.svg",
+          },
         ]
       ],
     },
