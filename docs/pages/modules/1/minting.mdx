@@ -1,15 +1,42 @@
 # Mint your NFT on the Raspberry rollup
 
-import { Button } from 'vocs/components'
+Now is time to mint your NFT.
 
-## Post about it
+For the sake of this module, we'll be using the embed to mint the NFT directly in the browser. Then we'll add it to your wallet so you can see it in the NFTs tab.
 
-Congratulations 🎉 you've minted an ERC-721 NFT on your rollup!
+## Find your embed
 
-<Button href="https://twitter.com/intent/tweet?text=I just finished module 1 of Modular Academy! Check out my NFT" variant="accent" target="_blank">post a tweet with a picture of your NFT in your wallet</Button>
+Find the embed tab on the sidebar under "Extensions" for your contract.
 
-Then [submit your tweet link with your EVM address](https://forms.gle/p4MNauxsz6ijnfjR8) and we'll send you an NFT as a momento of finishing your first module on your journey in the Modular Academy.
+It looks like this, but with your NFT.
 
-## Next steps
+<iframe
+    src="https://embed.ipfscdn.io/ipfs/bafybeicd3qfzelz4su7ng6n523virdsgobrc5pcbarhwqv3dj3drh645pi/?contract=0x4b7585d88a9ac587D7DCa93b842Fa987704f0fe0&chain=%7B%22name%22%3A%22OP+Celestia+Rasberry%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2F123420111.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22opcelestia-rasberry%22%2C%22chainId%22%3A123420111%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22op-celestia-rasberry%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmQXw4QEDR4AbUwX9scH7aGhiSDhQRxu6LCQoUkgsYgGyK%2FGelato%2520brand%2520mark.png%22%2C%22width%22%3A300%2C%22height%22%3A300%2C%22format%22%3A%22png%22%7D%7D&clientId=b83e81cb25ecbd32cae52ca92aa73bfb&theme=dark&primaryColor=purple"
+    width="600px"
+    height="600px"
+    frameborder="0"
+></iframe>
 
-Then head back to the [modules page](/build-whatever) to continue your journey through the Modular Academy.
+Connect your wallet or, if you made it for someone else, send them the link. It'll look like this:
+
+```markdown
+https://embed.ipfscdn.io/ipfs/bafybeicd3qfzelz4su7ng6n523virdsgobrc5pcbarhwqv3dj3drh645pi/?contract=0x4b7585d88a9ac587D7DCa93b842Fa987704f0fe0&chain=%7B%22name%22%3A%22OP+Celestia+Rasberry%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2F123420111.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22opcelestia-rasberry%22%2C%22chainId%22%3A123420111%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22op-celestia-rasberry%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmQXw4QEDR4AbUwX9scH7aGhiSDhQRxu6LCQoUkgsYgGyK%2FGelato%2520brand%2520mark.png%22%2C%22width%22%3A300%2C%22height%22%3A300%2C%22format%22%3A%22png%22%7D%7D&clientId=b83e81cb25ecbd32cae52ca92aa73bfb&theme=dark&primaryColor=purple
+```
+
+## Mint the NFT
+
+Click the mint button to mint your NFT for free.
+
+![mint](/module_1/mint.png)
+
+Nice! You've minted an ERC-721 NFT on a rollup!
+
+![success](/module_1/success.png)
+
+## Add the contract to your wallet
+
+Find the contract address in the thirdweb dashboard and add it using "Import NFT" in MetaMask.
+
+![nft-in-wallet](/module_1/nft-in-wallet.png)
+
+You can also see it in [the NFTs tab in the thirdweb dashboard](https://thirdweb.com/op-celestia-rasberry/0x4b7585d88a9ac587D7DCa93b842Fa987704f0fe0/nfts/0).

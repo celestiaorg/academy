@@ -55,6 +55,10 @@ export default defineConfig({
       {
         text: 'Minting your NFT',
         link: '/modules/1/minting',
+      },
+      {
+        text: 'Submit module 1',
+        link: '/modules/1/submit',
       }
     ],
     // '/' : [
@@ -101,26 +105,26 @@ export default defineConfig({
         ],
         [
           {
-            name: 'Sovereign SDK',
-            link: 'https://sovereign.xyz',
-            image: '/logos/sovereign.svg',
-          },
-          {
             name: 'Astria',
             link: 'https://astria.org',
             image: '/logos/astria.svg',
           },
+          {
+            name: 'Sovereign SDK',
+            link: 'https://sovereign.xyz',
+            image: '/logos/sovereign.svg',
+          },
         ],
         [
-          {
-            name: "OP Stack",
-            link: "https://docs.optimism.io",
-            image: "/logos/optimism.svg",
-          },
           {
             name: "Arbitrum Nitro and Orbit",
             link: "https://docs.optimism.io",
             image: "/logos/orbit.svg",
+          },
+          {
+            name: "OP Stack",
+            link: "https://docs.optimism.io",
+            image: "/logos/optimism.svg",
           },
         ],
         [
@@ -128,6 +132,11 @@ export default defineConfig({
             name: "whatever",
             link: "https://buildwhatever.com",
             image: "logos/whatever.svg",
+          },
+          {
+            name: "thirdweb",
+            link: "https://thirdweb.com",
+            image: "logos/thirdweb.svg",
           }
         ]
       ],
