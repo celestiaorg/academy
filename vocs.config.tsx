@@ -5,11 +5,11 @@ export default defineConfig({
     return (
       <>
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Modular Academy" />
+      <meta property="og:title" content="modular academy" />
       <meta property="og:image" content="https://vocs.dev/api/og?logo=%logo&title=%title&description=%description" />
       {/* <meta property="og:url" content="https://modular.academy" /> */}
       <meta property="og:url" content="https://modular-academy.vercel.app" />
-      <meta property="og:description" content="Build whatever with Celestia underneath." />
+      <meta property="og:description" content="build whatever with Celestia underneath." />
       <script defer data-domain="modular-academy.vercel.app" src="https://plausible.io/js/script.js"></script>
       </>
     )
@@ -28,40 +28,40 @@ export default defineConfig({
   //   '/': 'https://vocs.dev/og-image.png', // TODO: replace this with a base OG image for Modular Academy
   //   '/modules': 'https://vocs.dev/api/og?logo=%logo&title=%title&description=%description',
   // },
-  title: 'Modular Academy',
-  titleTemplate: '%s - Modular Academy',
-  description: 'Build whatever with Celestia underneath.',
+  title: 'modular academy',
+  titleTemplate: '%s - modular academy',
+  description: 'build whatever with Celestia underneath.',
   editLink: {
     pattern: 'https://github.com/celestiaorg/academy/edit/main/docs/pages/:path',
-    text: 'Edit this page on GitHub'
+    text: 'edit this page on GitHub'
   },
   font: {
     google: 'Poppins'
   },
-  banner: 'Join [the Telegram](https://t.me/modularacademyorg) for updates!', 
+  banner: 'join [the telegram](https://t.me/modularacademyorg) for updates!', 
   // baseUrl: 'https://modular.academy',
   baseUrl: 'https://modular-academy.vercel.app',
   sidebar:
   {
     '/modules/1/': [ 
       {
-        text: 'Introduction',
-        link: '/modules/1/introduction',
+        text: 'intro',
+        link: '/modules/1/intro',
       },
       {
         text: 'Raspberry testnet',
         link: '/modules/1/raspberry',
       },
       {
-        text: 'Deploy your contract',
+        text: 'deploy your contract',
         link: '/modules/1/thirdweb',
       },
       {
-        text: 'Minting your NFT',
+        text: 'minting your NFT',
         link: '/modules/1/minting',
       },
       {
-        text: 'Submit module 1',
+        text: 'submit module 1',
         link: '/modules/1/submit',
       }
     ],
@@ -84,67 +84,17 @@ export default defineConfig({
       link: 'https://t.me/modularacademyorg',
     },
   ],
-  sponsors: [
-    {
-      name: 'Learn to build whatever with',
-      height: 60,
-      items: [
-        [
-          {
-            name: 'Celestia',
-            link: 'https://celestia.org',
-            image: 'logos/celestia.svg',
-          },
-          {
-            name: 'Rollkit',
-            link: 'https://rollkit.dev',
-            image: 'logos/rollkit.svg',
-          },
-        ],
-        [
-          {
-            name: 'Astria',
-            link: 'https://astria.org',
-            image: 'logos/astria.svg',
-          },
-          {
-            name: 'Sovereign SDK',
-            link: 'https://sovereign.xyz',
-            image: 'logos/sovereign.svg',
-          },
-        ],
-        [
-          {
-            name: "Arbitrum Nitro and Orbit",
-            link: "https://docs.optimism.io",
-            image: "logos/orbit.svg",
-          },
-          {
-            name: "OP Stack",
-            link: "https://docs.optimism.io",
-            image: "logos/optimism.svg",
-          },
-        ],
-        [
-          {
-            name: "Gelato",
-            link: "https://gelato.network",
-            image: "logos/gelato.svg",
-          },
-          {
-            name: "thirdweb",
-            link: "https://thirdweb.com",
-            image: "logos/thirdweb.svg",
-          }
-        ],
-        [
-          {
-            name: "whatever",
-            link: "https://buildwhatever.com",
-            image: "logos/whatever.svg",
-          },
-        ]
-      ],
-    },
-  ],
+  theme: { 
+    accentColor: { 
+      light: '#7B2BF9', 
+      dark: '#91F5E6', 
+    }
+  },
+  // TODO: play around with search configurations
+  // source: https://vocs.dev/docs/api/config#search
+  search: { 
+    boostDocument(documentId) { 
+      return documentId === '/core' ? 2 : 1
+    } 
+  }, 
 })
