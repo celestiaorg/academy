@@ -2,7 +2,7 @@ import React from 'react';
 
 const ModuleCard = ({ image, title, description, link }) => (
   <button 
-    className="w-full md:max-w-6xl lg:max-w-6xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden m-4 focus:outline-none transform transition duration-500 ease-in-out hover:scale-105 hover:bg-gray-200 dark:hover:bg-gray-700"
+    className="w-full md:max-w-6xl lg:max-w-6xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden m-4 focus:outline-none transform hover:scale-105 hover:bg-gray-200 dark:hover:bg-gray-700 transition-transform duration-500 ease-in-out transition-background-color hover:duration-500"
     onClick={() => window.location.href = link}
   >
     <div className="md:flex">
