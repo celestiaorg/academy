@@ -9,9 +9,9 @@ const ModuleCard = ({ image, title, description, link }) => (
       <div className="md:flex-shrink-0">
         <img className="h-48 w-full object-cover md:w-48" src={image} alt="Module image"/>
       </div>
-      <div className="p-8">
+      <div className="p-8 flex flex-col justify-center text-center md:text-left">
         <div className="lowercase tracking-wide text-sm text-indigo-500 dark:text-indigo-300 font-semibold">{title}</div>
-        <p className="mt-2 text-gray-500 dark:text-gray-300">{description}</p>
+        <p className="mt-2 text-gray-500 dark:text-gray-300 md:w-full">{description}</p>
       </div>
     </div>
   </button>
