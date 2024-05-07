@@ -12,6 +12,7 @@ showSidebar: false
 layout: landing
 ---
 import { Button } from 'vocs/components'
+import ModuleCard from '../public/components/ModuleCard.jsx'
 
 # build whatever with Celestia underneath ✨
 
@@ -24,11 +25,28 @@ if you've finished modules 0 and 1, we're working on more now for you to continu
 
 ## submit a blob, become a rollup
 
-<Button href="/modules/0/intro" variant="accent">module 0: submit a blob to Celestia</Button>
+<ModuleCard 
+  image="/module_cards/0.png" 
+  title="module 0" 
+  description="submit a blob to Celestia and become your own rollup" 
+  link="/modules/0/intro"
+/>
 
 ## smart contracts on rollups
 
 Get started with module 1. This will show you how to
 create an ERC-721 smart contract on OP Celestia Raspberry testnet.
 
-<Button href="/modules/1/intro" variant="accent">module 1: Raspberry NFT</Button>
+<ModuleCard 
+  image="/module_cards/1.png" 
+  title="module 1" 
+  description="deploy a contract and mint an NFT on OP Celestia Raspberry testnet" 
+  link="/modules/1/intro"
+/>
+
+<ModuleCard 
+  image="/module_cards/2.png" 
+  title="module 2" 
+  description="coming soon" 
+  link="/build-whatever"
+/>
