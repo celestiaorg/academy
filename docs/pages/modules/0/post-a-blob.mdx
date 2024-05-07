@@ -1,0 +1,79 @@
+---
+description: post your blob.
+---
+
+# post a blob
+
+let's become a rollup by posting a blob to Celestia.
+
+::::steps
+## decide what you're gonna post
+
+okay so for this example let's start small. instead of making a rollup with complicated logic, let's just post a blob with a single number in it for state. we'll call this number our "state". our rollup (you, in this case) will keep track of this number and update it every time we post a new blob.
+
+i'll start with 42. we'll also need some way to connect the blocks, in this example, we'll use a block number, the previous blob's committment, height, and namespace.
+
+```json
+{
+  "block_number": 1,
+  "state": 42,
+  "previous_blob_committment": "null",
+  "previous_blob_height": null,
+  "previous_blob_namespace": "null"
+}
+```
+
+## post your blob
+
+### download keplr
+
+[keplr](https://keplr.app) is a cosmos wallet that supports Celestia. you'll need it to post your blobs.
+
+### get some testnet TIA
+
+copy your address from keplr and head to the [arabica faucet](https://faucet.celestia-arabica-11.com) to request your testnet TIA
+
+### connect to Celenium
+
+head to [Celenium](https://arabica.celenium.io) and post your blob. connect your wallet. you'll need to sign the transaction with keplr.
+
+![connect-to-celenium](/module_0/connect-to-celenium.png)
+
+once you're connected, you'll see your balance in the top right corner.
+
+![connected](/module_0/connected.png)
+
+#### post it
+
+click your account in the top right corner and click "Submit Blob". enter a namespace, upload your json as a txt file and click "Continue"
+
+![submit-blob](/module_0/submit-blob.png)
+
+
+## check your blob
+
+once your blob has landed in a block, you can find it on Celenium. check the state of your rollup by looking at the latest blob.
+
+![submitted](/module_0/submitted.png)
+
+wait for your transaction to land and head to step 3
+
+## do some thing to your state
+
+now let's update your state. do some arbitrary thing to your state and post a new blob.
+
+```json
+{
+  "block_number": 2,
+  "state": 420,
+  "previous_blob_committment": "oG4wP2Jup0oab23kqBI94Vmm0g26KRQ2pv7Yn7NSx0M=",
+  "previous_blob_height": 956284,
+  "previous_blob_namespace": "4242"
+}
+```
+
+## post your new state
+
+post your state for block 2 to Celestia. you'll need to sign the transaction again with keplr.
+
+::::

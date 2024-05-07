@@ -43,6 +43,20 @@ export default defineConfig({
   baseUrl: 'https://modular-academy.vercel.app',
   sidebar:
   {
+    '/modules/0/': [ 
+      {
+        text: 'intro',
+        link: '/modules/0/intro',
+      },
+      {
+        text: 'post a blob',
+        link: '/modules/0/post-a-blob',
+      },
+      {
+        text: 'submit module 0',
+        link: '/modules/0/submit',
+      }
+    ],
     '/modules/1/': [ 
       {
         text: 'intro',
@@ -97,4 +111,10 @@ export default defineConfig({
       return documentId === '/core' ? 2 : 1
     } 
   }, 
+  topNav: [
+    {
+      text: 'modules',
+      link: '/build-whatever',
+    },
+  ]
 })
